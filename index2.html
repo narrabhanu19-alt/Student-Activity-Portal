@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hospital Appointment Website</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+   
+</head>
+
+<body>
+
+    <header>
+        <h1>ABC Hospital</h1>
+        <p>Your Health is Our Priority</p>
+    </header>
+
+    <nav>
+        <a href="#home">Home</a> |
+        <a href="#services">Services</a> |
+        <a href="#doctors">Doctors</a> |
+        <a href="#appointment">Appointment</a>
+    </nav>
+
+    <main>
+
+        <section id="home">
+            <h2>Welcome to ABC Hospital</h2>
+            <p>We provide the best medical care for our patients.</p>
+        </section>
+
+        <section id="services">
+            <h2>Our Services</h2>
+
+            <article>
+                <h3>Emergency Care</h3>
+                <p>24/7 emergency medical services.</p>
+            </article>
+
+            <article>
+                <h3>General Checkup</h3>
+                <p>Regular health checkups for everyone.</p>
+            </article>
+
+            <article>
+                <h3>Laboratory</h3>
+                <p>Blood tests and medical reports.</p>
+            </article>
+        </section>
+
+        <section id="doctors">
+            <h2>Our Doctors</h2>
+
+            <article>
+                <h3>Dr. Ravi</h3>
+                <p>Heart Specialist</p>
+            </article>
+
+            <article>
+                <h3>Dr. Priya</h3>
+                <p>General Physician</p>
+            </article>
+
+            <aside>
+                <h3>Hospital Timing</h3>
+                <p>Monday to Saturday: 9 AM to 6 PM</p>
+            </aside>
+        </section>
+
+        <section id="appointment">
+            <h2>Book an Appointment</h2>
+
+            <form>
+
+                <label for="name">Patient Name:</label><br>
+                <input type="text" id="name" name="name" required>
+                <br><br>
+
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required>
+                <br><br>
+
+                <label for="phone">Phone Number:</label><br>
+                <input type="tel" id="phone" name="phone"
+                       pattern="[0-9]{10}" required>
+                <br><br>
+
+                <label for="date">Appointment Date:</label><br>
+                <input type="date" id="date" name="date" required>
+                <br><br>
+
+                <label for="doctor">Select Doctor:</label><br>
+                <select id="doctor" name="doctor" required>
+                    <option value="">Choose Doctor</option>
+                    <option>Dr. Ravi</option>
+                    <option>Dr. Priya</option>
+                </select>
+                <br><br>
+
+                <p>Gender:</p>
+
+                <input type="radio" id="male" name="gender" value="Male">
+                <label for="male">Male</label>
+
+                <input type="radio" id="female" name="gender" value="Female">
+                <label for="female">Female</label>
+                <br><br>
+
+                <label for="problem">Describe Your Problem:</label><br>
+                <textarea id="problem" name="problem"
+                          rows="4" cols="30"></textarea>
+                <br><br>
+
+                <input type="checkbox" id="agree" required>
+                <label for="agree">I agree to the terms and conditions</label>
+                <br><br>
+
+                <input type="submit" value="Book Appointment">
+                <input type="reset" value="Clear">
+
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>ABC Hospital</p>
+        <p>Contact: hospital@gmail.com</p>
+        <p>All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>
+
+ 

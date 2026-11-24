@@ -1,0 +1,111 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Activity Portal</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>KL University</h1>
+        <h2>Student Activity Management Portal</h2>
+        <p>Explore events and register for activities</p>
+    </header>
+
+    <nav>
+        <a href="#home">Home</a> |
+        <a href="#events">Events</a> |
+        <a href="#register">Register</a>
+    </nav>
+
+    <main>
+
+        <section id="home">
+            <h2>Welcome Students</h2>
+            <p>Welcome to the Student Activity Portal.
+            Participate in university events and activities.</p>
+        </section>
+
+        <section id="events">
+            <h2>Upcoming Events</h2>
+
+            <article>
+                <h3>Technical Fest</h3>
+                <p>Date: 25 November 2026</p>
+                <p>Explore technology and innovation.</p>
+            </article>
+
+            <article>
+                <h3>Sports Day</h3>
+                <p>Date: 28 November 2026</p>
+                <p>Participate in sports competitions.</p>
+            </article>
+
+            <aside>
+                <h3>Notice</h3>
+                <p>Register before the last date.</p>
+            </aside>
+        </section>
+
+        <section id="register">
+            <h2>Student Registration Form</h2>
+
+            <form>
+
+                <label for="name">Student Name:</label><br>
+                <input type="text" id="name" name="name" required>
+                <br><br>
+
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required>
+                <br><br>
+
+                <label for="branch">Branch:</label><br>
+                <select id="branch" name="branch">
+                    <option>CSE</option>
+                    <option>ECE</option>
+                    <option>EEE</option>
+                    <option>ME</option>
+                </select>
+                <br><br>
+
+                <p>Gender:</p>
+                <input type="radio" id="male" name="gender" value="Male">
+                <label for="male">Male</label>
+
+                <input type="radio" id="female" name="gender" value="Female">
+                <label for="female">Female</label>
+                <br><br>
+
+                <p>Select Activities:</p>
+                <input type="checkbox" id="tech" name="activity" value="Technical Fest">
+                <label for="tech">Technical Fest</label>
+
+                <input type="checkbox" id="sports" name="activity" value="Sports">
+                <label for="sports">Sports</label>
+                <br><br>
+
+                <label for="message">Why do you want to participate?</label><br>
+                <textarea id="message" name="message" rows="4" cols="30"></textarea>
+                <br><br>
+
+                <input type="submit" value="Register">
+
+                <input type="reset" value="Clear">
+
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>KL University | Student Activity Portal</p>
+        <p>Contact: info@kluniversity.in</p>
+    </footer>
+
+</body>
+</html>
